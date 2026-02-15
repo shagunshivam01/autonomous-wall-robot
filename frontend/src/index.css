@@ -1,0 +1,241 @@
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #e6edf3;
+  background-color: #0f1419;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #238636;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover:not(:disabled) {
+  background: #2ea043;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input[type="number"],
+input[type="text"] {
+  padding: 0.4rem;
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #e6edf3;
+  margin-left: 0.5rem;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.planning-page h1,
+.history-page h1,
+.visualization-page h1 {
+  margin-top: 0;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row label {
+  margin-right: 1rem;
+}
+
+.obstacle-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.obstacle-row input {
+  width: 70px;
+}
+
+.add-btn,
+.plan-btn {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.view-btn {
+  margin-top: 1rem;
+}
+
+.error {
+  color: #f85149;
+  margin-top: 1rem;
+}
+
+.path-visualizer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.viz-canvas-wrap {
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.viz-canvas {
+  display: block;
+  background: #161b22;
+}
+
+.explanation-panel {
+  flex: 1;
+  min-width: 280px;
+  padding: 1rem;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+}
+
+.explanation-panel h3 {
+  margin-top: 0;
+}
+
+.explanation-panel .algorithm {
+  font-weight: 600;
+  color: #58a6ff;
+}
+
+.explanation-panel .description {
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.explanation-panel .stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1rem;
+  margin-top: 1rem;
+}
+
+.explanation-panel dt {
+  color: #8b949e;
+}
+
+.viz-layout,
+.viz-full-layout {
+  margin: 1rem 0;
+}
+
+.playback-section,
+.playback-full {
+  margin: 1rem 0;
+}
+
+.playback-controls {
+  padding: 1rem;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+}
+
+.playback-controls h3 {
+  margin-top: 0;
+}
+
+.playback-canvas {
+  display: block;
+  background: #21262d;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #21262d;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #3fb950;
+  transition: width 0.1s;
+}
+
+.trajectory-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.trajectory-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.trajectory-item span {
+  margin-right: 1rem;
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.trajectory-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.trajectory-actions button:last-child {
+  background: #da3633;
+}
+
+.trajectory-actions button:last-child:hover {
+  background: #f85149;
+}
