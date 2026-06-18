@@ -13,7 +13,7 @@ A coverage path planning system for autonomous wall-finishing robots. Implements
 ## Project Structure
 
 ```
-Shagun/
+autonomous-wall-robot/
 ├── backend/          # FastAPI backend
 │   ├── app/
 │   │   ├── algorithms/   # Coverage path planning
@@ -34,7 +34,7 @@ Shagun/
 ### Backend
 
 ```bash
-cd Shagun/backend
+cd autonomous-wall-robot/backend
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -44,7 +44,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ### Frontend
 
 ```bash
-cd Shagun/frontend
+cd autonomous-wall-robot/frontend
 npm install
 npm run dev
 ```
@@ -54,7 +54,7 @@ Open http://localhost:5173
 ### Run Tests
 
 ```bash
-cd Shagun/backend
+cd autonomous-wall-robot/backend
 source venv/bin/activate
 PYTHONPATH=. pytest tests/ -v
 ```
